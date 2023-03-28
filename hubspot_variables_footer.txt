@@ -1,0 +1,22 @@
+      {{ site_settings.company_name }}
+      {{ site_settings.company_street_address_1 }}
+      {{ site_settings.company_street_address_2 }}
+      {{ site_settings.company_city }}
+      {{ site_settings.company_state }}
+      {{ site_settings.company_zip }}
+      {{ site_settings.company_country }}
+
+
+
+
+Subscription Name
+{{ subscription_name }}
+
+Company Name
+{{ site_settings.company_name }}.
+
+Unsubscribe Signle Link 
+<a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">Update your email preferences</a> 
+
+Unsubscribe Link Width Options 
+<a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe from all future emails.</a>

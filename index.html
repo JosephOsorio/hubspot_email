@@ -1,0 +1,3067 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!-- Yahoo Fix Do Not Remove -->
+  </head>
+  <head>
+    <!-- utf-8 works for most cases -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta
+      name="format-detection"
+      content="telephone=no,address=no,email=no,date=no,url=no"
+    />
+    <!--target dark mode-->
+    <!-- <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" /> -->
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title>Joseph Osorio HTML Email Boiler Plate</title>
+    <!-- Allow for better image rendering on Windows hi-DPI displays. -->
+    <!--[if gte mso 9]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:AllowPNG />
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <!-- To support dark mode meta tags w/ Examples -->
+    <!-- <style type="text/css">
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        body,
+        center,
+        table,
+        .darkmode-bg {
+          background: #2d2d2d !important;
+          color: #ffffff !important;
+        }
+        .darkmode-transparent {
+          background-color: transparent !important;
+        }
+      }
+
+      /* Outlook Dark-Mode*/
+      [data-ogsc] .dark-img {
+        display: block !important;
+      }
+    </style> -->
+    <!-- Reset, Styles For Template -->
+    <style type="text/css">
+      /* 
+        What it does: Stops email clients resizing small text. 
+      */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* 
+        What it does: Centers email on Android 4.4 
+      */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* 
+        What it does: A work-around for email clients meddling in triggered links. 
+      */
+      a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* GMAIL BLUE LINKS */
+      u + #body a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* SAMSUNG MAIL BLUE LINKS */
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* What it does: forces Samsung Android mail clients to use the entire viewport */
+      #MessageViewBody,
+      #MessageWebViewDiv {
+        width: 100% !important;
+      }
+
+      /* 
+        What it does: Prevents Gmail from changing the text color in conversation threads. 
+      */
+      .im {
+        color: inherit !important;
+      }
+
+      /* 
+        What it does: Prevents Gmail from displaying a download button on large, 
+        non-linked images. 
+      */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* 
+        If the above doesn't work, add a .g-img class to any image in question. 
+      */
+      img.g-img + div {
+        display: none !important;
+      }
+
+      /* Resets For Body */
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      /* Client-Specific Styles */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+
+      /* 
+        What it does: Stops Outlook from adding extra spacing to tables. 
+      */
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      /* 
+        What it does: Fixes webkit padding issue. 
+      */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+      }
+
+      /* 
+        What it does: Uses a better rendering method when resizing images in IE. 
+      */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* RESET STYLES */
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+
+      /* Universal styles for links and stuff */
+      /* a {
+        color: #229efd;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #fd6350;
+        text-decoration: none;
+      }
+      a.button:hover {
+        background-color: #fd6350 !important;
+      } */
+    </style>
+    <!-- Media Queries For Responsiveness w/ Examples -->
+    <style type="text/css" media="screen">
+      /* Mobile styles */
+      @media only screen and (max-device-width: 716px),
+        only screen and (max-width: 716px) {
+        .columns-full-width {
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+
+        .full-image-width img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+
+        .img-resize-70 img {
+          width: 100% !important;
+          max-width: 70% !important;
+          height: auto !important;
+        }
+
+        .container {
+          padding: 20px !important;
+        }
+
+        .mobile-shell {
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+
+        .line-divider {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+
+        .column-empty {
+          padding: 20px 0 !important;
+        }
+
+        .ftn-36 {
+          font-size: 24px !important;
+        }
+
+        .ftn-24 {
+          font-size: 16px !important;
+        }
+
+        .ftn-size_14 {
+          font-size: 12px !important;
+        }
+
+        .psd-effect-middle-section {
+          padding-top: 10px !important;
+        }
+      }
+
+      @media only screen and (max-device-width: 480px),
+        only screen and (max-width: 480px) {
+        .font-size-resized-36 {
+          font-size: 28px !important;
+        }
+
+        .font-size-resized-32 {
+          font-size: 24px !important;
+        }
+
+        .font-size-resized-24 {
+          font-size: 20px !important;
+        }
+
+        .font-size-resized-16 {
+          font-size: 14px !important;
+        }
+
+        .img-resize-40 img {
+          width: 100% !important;
+          max-width: 40% !important;
+          height: auto !important;
+        }
+
+        .img-resize-70 img {
+          width: 100% !important;
+          max-width: 70% !important;
+          height: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    id="body"
+    style="
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      -webkit-font-smoothing: antialiased;
+      background-color: #ffffff;
+    "
+  >
+    <center
+      role="article"
+      aria-roledescription="email"
+      aria-label="Email"
+      lang="en"
+      style="width: 100%; table-layout: fixed; background-color: #ffffff"
+    >
+      <!-- Preheader (remove comment) -->
+      <module name="preheader" label="Preheader">
+        <div
+          style="
+            font-size: 0px;
+            line-height: 1px;
+            display: none;
+            max-width: 0px;
+            max-height: 0px;
+            opacity: 0;
+            overflow: hidden;
+          "
+        >
+          <editable name="preheader"
+            >-- Pre Header Text Goes Here -- 💯</editable
+          >
+          <!-- Insert &#847;&zwnj;&nbsp; hack after hidden preview text -->
+          <div style="display: none; max-height: 0px; overflow: hidden">
+            &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+            &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+            &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+            &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+            &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+          </div>
+        </div>
+      </module>
+      <!-- End Preheader (remove comment) -->
+      <!--[if (gte mso 9)|(IE)]>
+        <table 
+          role="presentation" 
+          border="0" 
+          cellpadding="0" 
+          cellspacing="0" 
+          width="100%" 
+          style="background-color: #ffffff;"
+        >
+          <tr>
+            <td align="center">
+      <![endif]-->
+      <div
+        style="
+          width: 100%;
+          max-width: 700px;
+          margin: 0 auto;
+          background-color: #2f2f2f;
+        "
+      >
+        <!--[if (gte mso 9)|(IE)]>
+          <table 
+            role="presentation" 
+            cellspacing="0" 
+            cellpadding="0" 
+            border="0" 
+            width="700"
+          >
+            <tr>
+              <td>
+        <![endif]-->
+        <!-- 
+          First Content Block STARTS Here 
+        -->
+        <!-- Block 1 -->
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          bgcolor="#2f2f2f"
+          style="border-spacing: 0; border-collapse: collapse; width: 100%"
+        >
+          <tr>
+            <td align="center" style="padding-top: 50px; padding-bottom: 50px">
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                style="border-spacing: 0; border-collapse: collapse"
+              >
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.josephosorio.dev"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/jo_logo.png"
+                        alt="image"
+                        width="100"
+                        style="
+                          display: block;
+                          border: 0px;
+                          width: 100%;
+                          max-width: 100px;
+                        "
+                    /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+                bgcolor="#D9E0E2"
+                style="
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  width: 100%;
+                  background-color: #d9e0e2;
+                "
+              >
+                <tr>
+                  <td align="center" height="100%" valign="top" width="100%">
+                    <!--[if (gte mso 9)|(IE)]>
+                      <table 
+                        align="center" 
+                        border="0" 
+                        cellspacing="0" 
+                        cellpadding="0" 
+                        width="700"
+                      >
+                        <tr>
+                          <td align="center" valign="top" width="700">
+                    <![endif]-->
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td align="center" valign="top" style="font-size: 0">
+                          <!--[if (gte mso 9)|(IE)]>
+                            <table 
+                              align="center" 
+                              border="0" 
+                              cellspacing="0" 
+                              cellpadding="0" 
+                              width="450"
+                            >
+                              <tr>
+                                <td align="center" valign="top" width="150" style="padding-top: 15px;
+                              padding-bottom: 15px;">
+                          <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              max-width: 150px;
+                              min-width: 150px;
+                              vertical-align: top;
+                              width: 100%;
+                              padding-top: 15px;
+                              padding-bottom: 15px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  align="center"
+                                  valign="top"
+                                  style="
+                                    font: normal normal bold 16px / normal Arial,
+                                      Helvetica, sans-serif;
+                                  "
+                                >
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="
+                                      color: #2f2f2f;
+                                      text-decoration: none;
+                                    "
+                                    >Trending</a
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                          <td align="center" valign="top" width="150" style="padding-top: 15px;
+                          padding-bottom: 15px;">
+                      <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              max-width: 150px;
+                              min-width: 150px;
+                              vertical-align: top;
+                              width: 100%;
+                              padding-top: 15px;
+                              padding-bottom: 15px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  align="center"
+                                  valign="top"
+                                  style="
+                                    font: normal normal bold 16px / normal Arial,
+                                      Helvetica, sans-serif;
+                                  "
+                                >
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="
+                                      color: #2f2f2f;
+                                      text-decoration: none;
+                                    "
+                                    >New Releases</a
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                        </td>               
+                          <td align="center" valign="top" width="150" style="padding-top: 15px;
+                          padding-bottom: 15px;>
+                      <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              max-width: 150px;
+                              min-width: 150px;
+                              vertical-align: top;
+                              width: 100%;
+                              padding-top: 15px;
+                              padding-bottom: 15px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  align="center"
+                                  valign="top"
+                                  style="
+                                    font: normal normal bold 16px / normal Arial,
+                                      Helvetica, sans-serif;
+                                  "
+                                >
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="
+                                      color: #2f2f2f;
+                                      text-decoration: none;
+                                    "
+                                    >Coming Soon</a
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                          </tr>
+                        </table>
+                      <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+              <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- Block 2 -->
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          style="border-spacing: 0; border-collapse: collapse; width: 100%"
+        >
+          <tr>
+            <td
+              background="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/bg-img_1.png"
+              bgcolor="#2f2f2f"
+              width="700"
+              height="725"
+              valign="top"
+              align="center"
+            >
+              <!--[if gte mso 9]>
+              <v:rect 
+                xmlns:v="urn:schemas-microsoft-com:vml" 
+                fill="true" 
+                stroke="false" 
+                style="width:700px;height:725px;"
+              >
+                <v:fill 
+                  type="tile" 
+                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/bg-img_1.png" 
+                  color="#2f2f2f" 
+                />
+                <v:textbox inset="0,0,0,0">
+              <![endif]-->
+              <div align="center">
+                <!--[if (gte mso 9)|(IE)]>
+                  <table 
+                    role="presentation" 
+                    cellspacing="0" 
+                    cellpadding="0" 
+                    border="0" 
+                    width="700"
+                  >
+                    <tr>
+                      <td align="center">
+                <![endif]-->
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="90%"
+                  style="
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    width: 90%;
+                    max-width: 700px;
+                    margin: 0 auto;
+                    height: 725px;
+                  "
+                >
+                  <tr>
+                    <!--[if (gte mso 9)|(IE)]>
+                      <td align="center" style="padding-top:50px;">
+                    <![endif]-->
+                    <td align="center">
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        width="100%"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          width: 100%;
+                        "
+                      >
+                        <tr>
+                          <td align="center">
+                            <img
+                              src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/block-2_img_1.png"
+                              alt="image"
+                              width="300"
+                              style="
+                                display: block;
+                                border: 0px;
+                                width: 100%;
+                                max-width: 300px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        width="100%"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          width: 100%;
+                        "
+                      >
+                        <tr>
+                          <td
+                            class="font-size-resized-32"
+                            align="center"
+                            style="
+                              font: normal normal bold 32px / normal Arial,
+                                Helvetica, sans-serif;
+                              color: #ffffff;
+                            "
+                          >
+                            What’s it like so far?
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            align="center"
+                            style="padding-top: 25px; padding-bottom: 25px"
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td class="img-resize-40" align="right">
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_thumbs-up.png"
+                                      alt="icon"
+                                      width="60"
+                                      style="
+                                        display: block;
+                                        border: 0px;
+                                        width: 100%;
+                                        max-width: 60px;
+                                      "
+                                  /></a>
+                                </td>
+                                <td
+                                  width="50"
+                                  aria-hidden="true"
+                                  style="font-size: 0; line-height: 0px"
+                                ></td>
+                                <td class="img-resize-40" align="left">
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_thumbs-down.png"
+                                      alt="icon"
+                                      width="60"
+                                      style="
+                                        display: block;
+                                        border: 0px;
+                                        width: 100%;
+                                        max-width: 60px;
+                                      "
+                                    />
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              width="90%"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                                width: 90%;
+                                max-width: 350px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="font-size-resized-16"
+                                  style="
+                                    text-align: center;
+                                    font: normal normal normal 16px / normal
+                                        Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    The more you rate, the more we can suggest
+                                    films like movie name.
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  <![endif]-->
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                <![endif]-->
+              </div>
+              <!--[if gte mso 9]>
+                </v:textbox>
+              </v:rect>
+              <![endif]-->
+            </td>
+          </tr>
+        </table>
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          style="border-spacing: 0; border-collapse: collapse; width: 100%"
+        >
+          <tr>
+            <td align="center" height="100%" valign="top" width="100%">
+              <!--[if (gte mso 9)|(IE)]>
+              <table 
+                align="center" 
+                border="0" 
+                cellspacing="0" 
+                cellpadding="0" 
+                width="700"
+              >
+                <tr>
+                  <td align="center" valign="top" width="700">
+            <![endif]-->
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  width: 100%;
+                "
+              >
+                <tr>
+                  <td align="center" valign="top" style="font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table 
+                      align="center" 
+                      border="0" 
+                      cellspacing="0" 
+                      cellpadding="0" 
+                      width="700"
+                    >
+                      <tr>
+                        <td bgcolor="#2f2f2f" align="center" valign="top" width="350" style="padding-top: 25px;
+                      padding-bottom: 25px;">
+                  <![endif]-->
+                    <div
+                      class="columns-full-width"
+                      style="
+                        display: inline-block;
+                        width: 100%;
+                        max-width: 350px;
+                        vertical-align: top;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td align="center" valign="top">
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td>
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_replay.png"
+                                      alt="icon"
+                                      width="25"
+                                      style="
+                                        display: block;
+                                        border: 0px;
+                                        width: 100%;
+                                        max-width: 25px;
+                                      "
+                                  /></a>
+                                </td>
+                                <td
+                                  width="15"
+                                  aria-hidden="true"
+                                  style="font-size: 0; line-height: 0px"
+                                ></td>
+                                <td
+                                  class="font-size-resized-24"
+                                  style="
+                                    font: normal normal bold 24px / normal Arial,
+                                      Helvetica, sans-serif;
+                                  "
+                                >
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="
+                                      color: #ffffff;
+                                      text-decoration: none;
+                                    "
+                                    >Watch Again</a
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                      <td bgcolor="#D9E0E2" align="center" valign="top" width="350" style="padding-top: 25px;
+                      padding-bottom: 25px;">
+                  <![endif]-->
+                    <div
+                      class="columns-full-width"
+                      bgcolor="#D9E0E2"
+                      style="
+                        display: inline-block;
+                        width: 100%;
+                        max-width: 350px;
+                        vertical-align: top;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        background-color: #d9e0e2;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td
+                            class="font-size-resized-24"
+                            align="center"
+                            valign="top"
+                            style="
+                              font: normal normal bold 24px / normal Arial,
+                                Helvetica, sans-serif;
+                            "
+                          >
+                            <a
+                              href="https://www.josephosorio.dev"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style="color: #2f2f2f; text-decoration: none"
+                              >+ ADD TO LIST</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                      </tr>
+                    </table>
+                  <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+                </td>
+              </tr>
+            </table>
+          <![endif]-->
+            </td>
+          </tr>
+        </table>
+        <!-- Block 3 -->
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          style="border-spacing: 0; border-collapse: collapse; width: 100%"
+        >
+          <tr>
+            <td
+              background="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/bg-img_2.png"
+              bgcolor="#2f2f2f"
+              width="700"
+              height="725"
+              valign="top"
+            >
+              <!--[if gte mso 9]>
+                    <v:rect 
+                      xmlns:v="urn:schemas-microsoft-com:vml" 
+                      fill="true" 
+                      stroke="false" 
+                      style="width:700px;height:725px;"
+                    >
+                      <v:fill 
+                        type="tile" 
+                        src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/bg-img_2.png" 
+                        color="#2f2f2f" 
+                      />
+                      <v:textbox inset="0,0,0,0">
+                    <![endif]-->
+              <div>
+                <!--[if (gte mso 9)|(IE)]>
+                  <table 
+                    role="presentation" 
+                    cellspacing="0" 
+                    cellpadding="0" 
+                    border="0" 
+                    width="700"
+                  >
+                    <tr>
+                      <td align="center">
+                <![endif]-->
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                  width="90%"
+                  style="
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    width: 90%;
+                    max-width: 700px;
+                    margin: 0 auto;
+                    height: 725px;
+                  "
+                >
+                  <tr>
+                    <!--[if (gte mso 9)|(IE)]>
+                      <td align="center" style="padding-top:50px;">
+                    <![endif]-->
+                    <td align="center">
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        width="100%"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          width: 100%;
+                        "
+                      >
+                        <tr>
+                          <td align="center">
+                            <img
+                              src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/block-3_img_1.png"
+                              alt="image"
+                              width="300"
+                              style="
+                                display: block;
+                                border: 0px;
+                                width: 100%;
+                                max-width: 300px;
+                              "
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        width="100%"
+                        style="
+                          border-spacing: 0;
+                          border-collapse: collapse;
+                          width: 100%;
+                        "
+                      >
+                        <tr>
+                          <td
+                            class="font-size-resized-32"
+                            align="center"
+                            style="
+                              font: normal normal bold 32px / normal Arial,
+                                Helvetica, sans-serif;
+                              color: #ffffff;
+                            "
+                          >
+                            What’s it like so far?
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            align="center"
+                            style="padding-top: 25px; padding-bottom: 25px"
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td class="img-resize-40" align="right">
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_thumbs-up.png"
+                                      alt="icon"
+                                      width="60"
+                                      style="
+                                        display: block;
+                                        border: 0px;
+                                        width: 100%;
+                                        max-width: 60px;
+                                      "
+                                  /></a>
+                                </td>
+                                <td
+                                  width="50"
+                                  aria-hidden="true"
+                                  style="font-size: 0; line-height: 0px"
+                                ></td>
+                                <td class="img-resize-40" align="left">
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_thumbs-down.png"
+                                      alt="icon"
+                                      width="60"
+                                      style="
+                                        display: block;
+                                        border: 0px;
+                                        width: 100%;
+                                        max-width: 60px;
+                                      "
+                                  /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            align="center"
+                            style="
+                              font: normal normal normal 16px / normal Arial,
+                                Helvetica, sans-serif;
+                              color: #ffffff;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              width="90%"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                                width: 90%;
+                                max-width: 350px;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="font-size-resized-16"
+                                  style="
+                                    text-align: center;
+                                    font: normal normal normal 16px / normal
+                                        Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    The more you rate, the more we can suggest
+                                    films like movie name.
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  <![endif]-->
+                  </tr>
+                </table>
+              </div>
+              <!--[if gte mso 9]>
+                      </v:textbox>
+                    </v:rect>
+                    <![endif]-->
+            </td>
+          </tr>
+        </table>
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          style="border-spacing: 0; border-collapse: collapse; width: 100%"
+        >
+          <tr>
+            <td align="center" height="100%" valign="top" width="100%">
+              <!--[if (gte mso 9)|(IE)]>
+                    <table 
+                      align="center" 
+                      border="0" 
+                      cellspacing="0" 
+                      cellpadding="0" 
+                      width="700"
+                    >
+                      <tr>
+                        <td align="center" valign="top" width="700">
+                  <![endif]-->
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  width: 100%;
+                "
+              >
+                <tr>
+                  <td align="center" valign="top" style="font-size: 0">
+                    <!--[if (gte mso 9)|(IE)]>
+                          <table 
+                            align="center" 
+                            border="0" 
+                            cellspacing="0" 
+                            cellpadding="0" 
+                            width="700"
+                          >
+                            <tr>
+                              <td bgcolor="#2f2f2f" align="center" valign="top" width="350" style="padding-top: 25px;
+                            padding-bottom: 25px;">
+                        <![endif]-->
+                    <div
+                      class="columns-full-width"
+                      style="
+                        display: inline-block;
+                        width: 100%;
+                        max-width: 350px;
+                        vertical-align: top;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td align="center" valign="top">
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td>
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_replay.png"
+                                      alt="icon"
+                                      width="25"
+                                      style="
+                                        display: block;
+                                        border: 0px;
+                                        width: 100%;
+                                        max-width: 25px;
+                                      "
+                                  /></a>
+                                </td>
+                                <td
+                                  width="15"
+                                  aria-hidden="true"
+                                  style="font-size: 0; line-height: 0px"
+                                ></td>
+                                <td
+                                  class="font-size-resized-24"
+                                  style="
+                                    font: normal normal bold 24px / normal Arial,
+                                      Helvetica, sans-serif;
+                                  "
+                                >
+                                  <a
+                                    href="https://www.josephosorio.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style="
+                                      color: #ffffff;
+                                      text-decoration: none;
+                                    "
+                                    >Watch Again</a
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                            <td bgcolor="#D9E0E2" align="center" valign="top" width="350" style="padding-top: 25px;
+                            padding-bottom: 25px;">
+                        <![endif]-->
+                    <div
+                      class="columns-full-width"
+                      bgcolor="#D9E0E2"
+                      style="
+                        display: inline-block;
+                        width: 100%;
+                        max-width: 350px;
+                        vertical-align: top;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        background-color: #d9e0e2;
+                      "
+                    >
+                      <table
+                        role="presentation"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        style="border-spacing: 0; border-collapse: collapse"
+                      >
+                        <tr>
+                          <td
+                            class="font-size-resized-24"
+                            align="center"
+                            valign="top"
+                            style="
+                              font: normal normal bold 24px / normal Arial,
+                                Helvetica, sans-serif;
+                            "
+                          >
+                            <a
+                              href="https://www.josephosorio.dev"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style="color: #2f2f2f; text-decoration: none"
+                              >+ ADD TO LIST</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                <![endif]-->
+            </td>
+          </tr>
+        </table>
+        <!-- Block 4 -->
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          bgcolor="#D9E0E2"
+          style="
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #d9e0e2;
+          "
+        >
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="90%"
+                style="border-spacing: 0; border-collapse: collapse; width: 90%"
+              >
+                <tr>
+                  <td style="padding-bottom: 50px">
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          style="padding-top: 100px; padding-bottom: 50px"
+                        >
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            width="90%"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td
+                                class="font-size-resized-36"
+                                align="center"
+                                style="
+                                  font: normal normal bold 36px / normal Arial,
+                                    Helvetica, sans-serif;
+                                "
+                              >
+                                <p style="margin: 1px">
+                                  ADD MORE THRILLERS TO YOUR LIBRARY LIST
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td align="center" style="padding-bottom: 100px">
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td class="img-resize-70" align="center">
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_video-folder.png"
+                                  alt="icon"
+                                  width="300"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 300px;
+                                  "
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td
+                          class="font-size-resized-24"
+                          align="left"
+                          style="
+                            font: normal normal bold 24px / normal Arial,
+                              Helvetica, sans-serif;
+                            padding-bottom: 15px;
+                          "
+                        >
+                          <p style="margin: 1px">Action Thrillers</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            width="100%"
+                            style="
+                              border-spacing: 0;
+                              border-collapse: collapse;
+                              width: 100%;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_1.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                              <td
+                                width="25"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_2.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                              <td
+                                width="25"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_3.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td
+                          aria-hidden="true"
+                          style="
+                            font-size: 0;
+                            line-height: 0px;
+                            padding-top: 50px;
+                          "
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td
+                          class="font-size-resized-24"
+                          align="left"
+                          style="
+                            font: normal normal bold 24px / normal Arial,
+                              Helvetica, sans-serif;
+                            padding-bottom: 15px;
+                          "
+                        >
+                          <p style="margin: 1px">Drama Thrillers</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            width="100%"
+                            style="
+                              border-spacing: 0;
+                              border-collapse: collapse;
+                              width: 100%;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_4.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                              <td
+                                width="25"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_5.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                              <td
+                                width="25"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_6.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td
+                          aria-hidden="true"
+                          style="
+                            font-size: 0;
+                            line-height: 0px;
+                            padding-top: 50px;
+                          "
+                        >
+                          &nbsp;
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td
+                          class="font-size-resized-24"
+                          align="left"
+                          style="
+                            font: normal normal bold 24px / normal Arial,
+                              Helvetica, sans-serif;
+                            padding-bottom: 15px;
+                          "
+                        >
+                          <p style="margin: 1px">Suspense Thrillers</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            width="100%"
+                            style="
+                              border-spacing: 0;
+                              border-collapse: collapse;
+                              width: 100%;
+                            "
+                          >
+                            <tr>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_7.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                              <td
+                                width="25"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_8.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                              <td
+                                width="25"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-4_9.png"
+                                  alt="image"
+                                  width="175"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 175px;
+                                  "
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- Block 5 -->
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          bgcolor="#2f2f2f"
+          style="border-spacing: 0; border-collapse: collapse; width: 100%"
+        >
+          <tr>
+            <td align="center">
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="90%"
+                style="border-spacing: 0; border-collapse: collapse; width: 90%"
+              >
+                <tr>
+                  <td>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td
+                          align="center"
+                          style="padding-top: 100px; padding-bottom: 50px"
+                        >
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            width="90%"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td
+                                class="font-size-resized-36"
+                                align="center"
+                                style="
+                                  font: normal normal bold 36px / normal Arial,
+                                    Helvetica, sans-serif;
+                                  color: #ffffff;
+                                "
+                              >
+                                <p
+                                  class="font-size-resized-36"
+                                  style="margin: 1px"
+                                >
+                                  GET TO KNOW MORE ABOUT CUSTOM CONTROLS
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 100%;
+                      "
+                    >
+                      <tr>
+                        <td align="center" style="padding-bottom: 100px">
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td class="img-resize-70" align="center">
+                                <img
+                                  src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/icon_profile-settings.png"
+                                  alt="icon"
+                                  width="300"
+                                  style="
+                                    display: block;
+                                    border: 0px;
+                                    width: 100%;
+                                    max-width: 300px;
+                                  "
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 50px">
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  width: 100%;
+                "
+              >
+                <tr>
+                  <td align="center" height="100%" valign="top" width="100%">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table 
+                      align="center" 
+                      border="0" 
+                      cellspacing="0" 
+                      cellpadding="0" 
+                      width="700"
+                    >
+                      <tr>
+                        <td align="center" valign="top" width="700">
+                  <![endif]-->
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="90%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 90%;
+                      "
+                    >
+                      <tr>
+                        <td align="center" valign="top" style="font-size: 0">
+                          <!--[if (gte mso 9)|(IE)]>
+                          <table 
+                            align="center" 
+                            border="0" 
+                            cellspacing="0" 
+                            cellpadding="0" 
+                            width="630"
+                          >
+                            <tr>
+                              <td align="center" valign="top" width="315" style="padding-top: 25px;
+                            padding-bottom: 25px;">
+                        <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              width: 100%;
+                              max-width: 315px;
+                              vertical-align: top;
+                              padding-top: 25px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="full-image-width"
+                                  align="center"
+                                  valign="top"
+                                >
+                                  <img
+                                    src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-5_1.png"
+                                    alt="image"
+                                    width="225"
+                                    style="
+                                      display: block;
+                                      border: 0px;
+                                      width: 100%;
+                                      max-width: 225px;
+                                    "
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                            <td align="center" valign="top" width="315" style="padding-top: 40px;
+                            padding-bottom: 25px;">
+                        <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              width: 100%;
+                              max-width: 315px;
+                              vertical-align: top;
+                              padding-top: 40px;
+                              padding-bottom: 25px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="font-size-resized-24"
+                                  align="left"
+                                  valign="top"
+                                  style="
+                                    font: normal normal bold 24px / normal Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    Restrict specific titles anywhere from
+                                    profile
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  class="font-size-resized-16"
+                                  align="left"
+                                  style="
+                                    font: normal normal normal 15px / normal
+                                        Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                    padding-top: 15px;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    Only TV shows and movies that fit that
+                                    maturity rating will show up for that
+                                    profile.
+                                    <a
+                                      href="https://www.josephosorio.dev"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style="color: #ffffff; font-weight: bold"
+                                      >Learn More</a
+                                    >
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                              </td>
+                            </tr>
+                          </table>
+                        <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  width: 100%;
+                "
+              >
+                <tr>
+                  <td
+                    align="center"
+                    height="100%"
+                    valign="top"
+                    width="100%"
+                    style="padding-top: 50px; padding-bottom: 50px"
+                  >
+                    <!--[if (gte mso 9)|(IE)]>
+                  <table 
+                    align="center" 
+                    border="0" 
+                    cellspacing="0" 
+                    cellpadding="0" 
+                    width="700"
+                  >
+                    <tr>
+                      <td align="center" valign="top" width="700">
+                <![endif]-->
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="90%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 90%;
+                      "
+                    >
+                      <tr>
+                        <td align="center" valign="top" style="font-size: 0">
+                          <!--[if (gte mso 9)|(IE)]>
+                        <table 
+                          align="center" 
+                          border="0" 
+                          cellspacing="0" 
+                          cellpadding="0" 
+                          width="630"
+                        >
+                          <tr>
+                            <td align="center" valign="top" width="315" style="padding-top: 25px;
+                          padding-bottom: 25px;">
+                      <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              width: 100%;
+                              max-width: 315px;
+                              vertical-align: top;
+                              padding-top: 25px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="full-image-width"
+                                  align="center"
+                                  valign="top"
+                                >
+                                  <img
+                                    src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-5_2.png"
+                                    alt="image"
+                                    width="225"
+                                    style="
+                                      display: block;
+                                      border: 0px;
+                                      width: 100%;
+                                      max-width: 225px;
+                                    "
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                          <td align="center" valign="top" width="315" style="padding-top: 40px;
+                          padding-bottom: 25px;">
+                      <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              width: 100%;
+                              max-width: 315px;
+                              vertical-align: top;
+                              padding-top: 40px;
+                              padding-bottom: 25px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="font-size-resized-24"
+                                  align="left"
+                                  valign="top"
+                                  style="
+                                    font: normal normal bold 24px / normal Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    Restrict specific titles anywhere from
+                                    profile
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  class="font-size-resized-16"
+                                  align="left"
+                                  style="
+                                    font: normal normal normal 15px / normal
+                                        Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                    padding-top: 15px;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    Only TV shows and movies that fit that
+                                    maturity rating will show up for that
+                                    profile.
+                                    <a
+                                      href="https://www.josephosorio.dev"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style="color: #ffffff; font-weight: bold"
+                                      >Learn More</a
+                                    >
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                          </tr>
+                        </table>
+                      <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+              <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                  width: 100%;
+                "
+              >
+                <tr>
+                  <td align="center" height="100%" valign="top" width="100%">
+                    <!--[if (gte mso 9)|(IE)]>
+                  <table 
+                    align="center" 
+                    border="0" 
+                    cellspacing="0" 
+                    cellpadding="0" 
+                    width="700"
+                  >
+                    <tr>
+                      <td align="center" valign="top" width="700">
+                <![endif]-->
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="90%"
+                      style="
+                        border-spacing: 0;
+                        border-collapse: collapse;
+                        width: 90%;
+                      "
+                    >
+                      <tr>
+                        <td align="center" valign="top" style="font-size: 0">
+                          <!--[if (gte mso 9)|(IE)]>
+                        <table 
+                          align="center" 
+                          border="0" 
+                          cellspacing="0" 
+                          cellpadding="0" 
+                          width="630"
+                        >
+                          <tr>
+                            <td align="center" valign="top" width="315" style="padding-top: 25px;
+                          padding-bottom: 25px;">
+                      <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              width: 100%;
+                              max-width: 315px;
+                              vertical-align: top;
+                              padding-top: 25px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="full-image-width"
+                                  align="center"
+                                  valign="top"
+                                >
+                                  <img
+                                    src="https://www.oesso.host/showcase_projects/html_email-hubspot-feedback_template/images_compressed/img_block-5_3.png"
+                                    alt="image"
+                                    width="225"
+                                    style="
+                                      display: block;
+                                      border: 0px;
+                                      width: 100%;
+                                      max-width: 225px;
+                                    "
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                          <td align="center" valign="top" width="315" style="padding-top: 40px;
+                          padding-bottom: 25px;">
+                      <![endif]-->
+                          <div
+                            style="
+                              display: inline-block;
+                              width: 100%;
+                              max-width: 315px;
+                              vertical-align: top;
+                              padding-top: 40px;
+                              padding-bottom: 25px;
+                            "
+                          >
+                            <table
+                              role="presentation"
+                              cellpadding="0"
+                              cellspacing="0"
+                              border="0"
+                              style="
+                                border-spacing: 0;
+                                border-collapse: collapse;
+                              "
+                            >
+                              <tr>
+                                <td
+                                  class="font-size-resized-24"
+                                  align="left"
+                                  valign="top"
+                                  style="
+                                    font: normal normal bold 24px / normal Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    Restrict specific titles anywhere from
+                                    profile
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  class="font-size-resized-16"
+                                  align="left"
+                                  style="
+                                    font: normal normal normal 15px / normal
+                                        Arial,
+                                      Helvetica, sans-serif;
+                                    color: #ffffff;
+                                    padding-top: 15px;
+                                  "
+                                >
+                                  <p style="margin: 1px">
+                                    Only TV shows and movies that fit that
+                                    maturity rating will show up for that
+                                    profile.
+                                    <a
+                                      href="https://www.josephosorio.dev"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style="color: #ffffff; font-weight: bold"
+                                      >Learn More</a
+                                    >
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                          <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                          </tr>
+                        </table>
+                      <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  </tr>
+                </table>
+              <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              &nbsp;
+            </td>
+          </tr>
+        </table>
+        <!-- Block 6 -->
+        <table
+          role="presentation"
+          cellpadding="0"
+          cellspacing="0"
+          border="0"
+          width="100%"
+          bgcolor="#2f2f2f"
+          style="border-spacing: 0; border-collapse: collapse; width: 100%"
+        >
+          <tr>
+            <td align="center" style="padding-top: 100px">
+              <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                width="70%"
+                style="border-spacing: 0; border-collapse: collapse; width: 70%"
+              >
+                <tr>
+                  <th
+                    width="450"
+                    style="
+                      font-size: 0pt;
+                      line-height: 0pt;
+                      padding: 0;
+                      margin: 0;
+                      font-weight: normal;
+                      vertical-align: top;
+                    "
+                  >
+                    <table
+                      role="presentation"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      width="100%"
+                      style="border-spacing: 0; border-collapse: collapse"
+                    >
+                      <tr>
+                        <td
+                          class="ftn-24"
+                          align="center"
+                          style="
+                            font: normal normal bold 24px / normal Arial,
+                              Helvetica, sans-serif;
+                            color: #ffffff;
+                          "
+                        >
+                          DOWNLOAD THE APP
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          align="center"
+                          style="padding-top: 25px; padding-bottom: 25px"
+                        >
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  role="presentation"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="
+                                    border-spacing: 0;
+                                    border-collapse: collapse;
+                                  "
+                                >
+                                  <tr>
+                                    <td
+                                      class="img-resize-60"
+                                      width="135"
+                                      align="right"
+                                    >
+                                      <a
+                                        href="https://www.josephosorio.dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <img
+                                          src="https://www.oesso.host/showcase_projects/html_email-salesforce-promotional_template/images_compressed/img_app-store.png"
+                                          alt="img"
+                                          width="135"
+                                          style="
+                                            display: block;
+                                            border: 0px;
+                                            width: 100%;
+                                            max-width: 135px;
+                                          "
+                                      /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td
+                                width="25"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <table
+                                  role="presentation"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="
+                                    border-spacing: 0;
+                                    border-collapse: collapse;
+                                  "
+                                >
+                                  <tr>
+                                    <td
+                                      class="img-resize-60"
+                                      width="135"
+                                      align="left"
+                                    >
+                                      <a
+                                        href="https://www.josephosorio.dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <img
+                                          src="https://www.oesso.host/showcase_projects/html_email-salesforce-promotional_template/images_compressed/img_google-play.png"
+                                          alt="img"
+                                          width="135"
+                                          style="
+                                            display: block;
+                                            border: 0px;
+                                            width: 100%;
+                                            max-width: 135px;
+                                          "
+                                      /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          align="center"
+                          style="padding-top: 25px; padding-bottom: 25px"
+                        >
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td>
+                                <table
+                                  role="presentation"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="
+                                    border-spacing: 0;
+                                    border-collapse: collapse;
+                                  "
+                                >
+                                  <tr>
+                                    <td class="img-resize-60" width="35">
+                                      <a
+                                        href="https://www.josephosorio.dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <img
+                                          src="https://www.oesso.host/showcase_projects/html_email-salesforce-promotional_template/images_compressed/icon_dribble.png"
+                                          alt="icon"
+                                          width="35"
+                                          style="
+                                            display: block;
+                                            border: 0;
+                                            width: 100%;
+                                            max-width: 35px;
+                                          "
+                                      /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td
+                                width="10"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <table
+                                  role="presentation"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="
+                                    border-spacing: 0;
+                                    border-collapse: collapse;
+                                  "
+                                >
+                                  <tr>
+                                    <td class="img-resize-60" width="35">
+                                      <a
+                                        href="https://www.josephosorio.dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <img
+                                          src="https://www.oesso.host/showcase_projects/html_email-salesforce-promotional_template/images_compressed/icon_twitter.png"
+                                          alt="icon"
+                                          width="35"
+                                          style="
+                                            display: block;
+                                            border: 0;
+                                            width: 100%;
+                                            max-width: 35px;
+                                          "
+                                      /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td
+                                width="10"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <table
+                                  role="presentation"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="
+                                    border-spacing: 0;
+                                    border-collapse: collapse;
+                                  "
+                                >
+                                  <tr>
+                                    <td class="img-resize-60" width="35">
+                                      <a
+                                        href="https://www.josephosorio.dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <img
+                                          src="https://www.oesso.host/showcase_projects/html_email-salesforce-promotional_template/images_compressed/icon_youtube.png"
+                                          alt="icon"
+                                          width="35"
+                                          style="
+                                            display: block;
+                                            border: 0;
+                                            width: 100%;
+                                            max-width: 35px;
+                                          "
+                                      /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td
+                                width="10"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td>
+                                <table
+                                  role="presentation"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="
+                                    border-spacing: 0;
+                                    border-collapse: collapse;
+                                  "
+                                >
+                                  <tr>
+                                    <td class="img-resize-60" width="35">
+                                      <a
+                                        href="https://www.josephosorio.dev"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <img
+                                          src="https://www.oesso.host/showcase_projects/html_email-salesforce-promotional_template/images_compressed/icon_pinterest.png"
+                                          alt="icon"
+                                          width="35"
+                                          style="
+                                            display: block;
+                                            border: 0;
+                                            width: 100%;
+                                            max-width: 35px;
+                                          "
+                                      /></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          class="ftn-size_14"
+                          align="center"
+                          style="
+                            font: normal normal normal 14px / normal Arial,
+                              Helvetica, sans-serif;
+                            color: #ffffff;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                          "
+                        >
+                          <p style="margin: 1px">
+                            This message was sent to emailname@domain.com. If
+                            you no longer want to recieve this Emails you can go
+                            ahead and
+                            <a
+                              href="https://www.josephosorio.dev"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><span style="color: #b6c3c8"
+                                >unsubscribe</span
+                              ></a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          class="ftn-size_14"
+                          align="center"
+                          style="
+                            font: normal normal normal 14px / normal Arial,
+                              Helvetica, sans-serif;
+                            color: #ffffff;
+                          "
+                        >
+                          <p style="margin: 1px">
+                            444 Alaska Avenue Suite #BNU217 Torrance, CA 90503
+                            USA
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-top: 25px">
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td
+                                class="ftn-size_14"
+                                style="
+                                  font: normal normal normal 14px / normal Arial,
+                                    Helvetica, sans-serif;
+                                "
+                              >
+                                <a
+                                  href="https://www.josephosorio.dev"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style="color: #b6c3c8"
+                                  >Privacy</a
+                                >
+                              </td>
+                              <td
+                                width="50"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td
+                                class="ftn-size_14"
+                                style="
+                                  font: normal normal normal 14px / normal Arial,
+                                    Helvetica, sans-serif;
+                                "
+                              >
+                                <a
+                                  href="https://www.josephosorio.dev"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style="color: #b6c3c8"
+                                  >Account</a
+                                >
+                              </td>
+                              <td
+                                width="50"
+                                aria-hidden="true"
+                                style="font-size: 0; line-height: 0px"
+                              ></td>
+                              <td
+                                class="ftn-size_14"
+                                style="
+                                  font: normal normal normal 14px / normal Arial,
+                                    Helvetica, sans-serif;
+                                "
+                              >
+                                <a
+                                  href="https://www.josephosorio.dev"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style="color: #b6c3c8"
+                                  >Help</a
+                                >
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          align="center"
+                          style="padding-top: 50px; padding-bottom: 50px"
+                        >
+                          <table
+                            role="presentation"
+                            cellpadding="0"
+                            cellspacing="0"
+                            border="0"
+                            style="border-spacing: 0; border-collapse: collapse"
+                          >
+                            <tr>
+                              <td width="50">
+                                <a
+                                  href="https://www.josephosorio.dev"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <img
+                                    src="https://www.oesso.host/showcase_projects/html_email-salesforce-promotional_template/images_compressed/jo_monogram.png"
+                                    alt="img"
+                                    width="50"
+                                    style="
+                                      display: block;
+                                      border: 0px;
+                                      width: 100%;
+                                      max-width: 50px;
+                                    "
+                                /></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </th>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- 
+            First Content Block ENDS Here 
+        -->
+        <!--[if (gte mso 9)|(IE)]>
+              </td>
+            </tr>
+          </table>
+        <![endif]-->
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+            </td>
+          </tr>
+        </table>
+      <![endif]-->
+    </center>
+  </body>
+</html>
